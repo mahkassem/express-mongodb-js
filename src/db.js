@@ -12,8 +12,6 @@ const {
 
 const url = `mongodb://${DB_USER}:${DB_PASS}@${DB_HOST}/${DB_NAME}?authSource=admin`;
 
-console.log(url);
-
 const client = new MongoClient(url);
 
 client.connect().then(() => {

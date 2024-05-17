@@ -7,7 +7,6 @@
   "scripts": {
     "start": "node .",
     "dev": "nodemon src/app.js --watch",
-    "build": "babel src -d lib",
     "test": "jest --config jest.config.cjs --forceExit"
   },
   "author": "",

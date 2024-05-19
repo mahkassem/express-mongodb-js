@@ -2,7 +2,7 @@
   "name": "express-mvc",
   "version": "1.0.0",
   "description": "",
-  "main": "app.js",
+  "main": "src/app.js",
   "type": "module",
   "scripts": {
     "start": "node .",
@@ -19,9 +19,8 @@
     "mongodb": "^6.6.2"
   },
   "devDependencies": {
-    "@babel/cli": "^7.24.5",
-    "@babel/core": "^7.24.5",
     "@babel/preset-env": "^7.24.5",
+    "@babel/core": "^7.24.5",
     "babel-jest": "^29.7.0",
     "jest": "^29.7.0",
     "nodemon": "^3.1.0",

@@ -38,4 +38,16 @@ describe('POST /api/login', () => {
       .send(credentials)
       .expect(401); // Unauthorized
   });
+
+  it('should return a 404 if the user does not exist', async () => {
+    const credentials = {
+      username: 'nonexistinguser',
+      password: 'mypassword',
+    };
+
+    return await supertest(server)
+      .post('/api/auth/login')
+      .send(credentials)
+      .expect(404); // Not Found
+  });
 });
